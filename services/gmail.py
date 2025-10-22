@@ -32,11 +32,12 @@ def smtp_send_email(subject: str, body: str, reply_to: Optional[str] = None, ref
     msg["Message-ID"] = message_id
 
     if reply_to:
-        msg["Reply-To"] = reply_to
-        if references:
-            msg["References"] = f"{references}"
-        else:
-            msg["References"] = reply_to
+        msg["In-Reply-To"] = reply_to
+    
+    if references:
+        msg["References"] = references
+
+    print(msg["References"])
 
     msg.set_content(body)
 
@@ -55,24 +56,32 @@ def retrieve_email():
     mail.login(username, password)
     mail.select('inbox')
 
-    # Search for all email messages in the inbox
     status, data = mail.search(None, 'ALL')
 
-    
+    email_threads = {};
 
-    # Iterate through each email message and print its contents
     for num in data[0].split():
         status, data = mail.fetch(num, '(RFC822)')
         email_message = email.message_from_bytes(data[0][1])
-        print('From:', email_message['From'])
-        print('Subject:', email_message['Subject'])
-        print('Date:', email_message['Date'])
-        print('Body:', email_message.get_payload())
-        print('References:', email_message['References'])
-        print('Reply To:', email_message['Reply-To'])
-        print('Message Id', email_message['Message-Id'])
-        print()
+
+        references = email_message['References']
+
+        if references != None:
+            references = references.split(' ')
+
+        if references == None:
+            email_threads[email_message['Message-Id']] = build_full_email_from_email_message(email_message)
+        else:
+            for thread in email_threads:
+                if thread == references[-1]:
+                    email_threads[thread] = email_threads[thread] + build_full_email_from_email_message(email_message)
+
+    print(email_threads)
         
-    # Close the connection
     mail.close()
     mail.logout()
+
+def build_full_email_from_email_message(email_message):
+    body = email_message.get_payload(decode=True).decode('utf-8').strip()
+    body = body.replace('\n', ' ').replace('\r', ' ')
+    return f"{email_message['Subject']} {body}"

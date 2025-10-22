@@ -22,7 +22,7 @@ def mock_thread(product, messages):
     # and then thread the reploies
     for body in messages[1:]:
         prev_message_id = smtp_send_email(f"Re: {subject}", body, reply_to=prev_message_id, references=references)
-        references = references + ' ' + prev_message_id
+        references = prev_message_id + ' ' + references
         time.sleep(pause_seconds)
 
 
@@ -55,6 +55,6 @@ def sync_gmail_data():
     
 
 if __name__ == "__main__":
-    mock_gmail_data(1)
+    #mock_gmail_data(1)
     sync_gmail_data();
 
