@@ -1,0 +1,31 @@
+qid,query
+1,Which sales emails indicate the deal is close to closing?
+2,Show communications saying the customer is ready to sign or countersignature is pending.
+3,Find messages that mention final pricing or final paperwork.
+4,Where do they state legal is complete or procurement has approved?
+5,Which messages target signatures next week or reference DocuSign?
+6,Which sales communications imply we need to escalate or get manager involvement?
+7,Show emails requesting custom terms or non‑standard discounts.
+8,Find messages that ask for enterprise support SLAs or stricter response times.
+9,Where do customers ask about BYOK or customer‑managed keys?
+10,Which messages require internal confirmation before we can respond?
+11,Which emails say the prospect is evaluating or has the product shortlisted?
+12,Find communications asking for a pilot or trial.
+13,Show messages requesting a quick demo.
+14,Where do prospects mention they’re comparing options?
+15,How many of our open communications show product interest signals?
+16,Which sales communications involve high‑ranking executives?
+17,"Show emails where a CEO, CFO, CTO, CIO, or VP is mentioned."
+18,Find messages where an executive is joining the next call.
+19,Which conversations include a Chief officer or VP by title?
+20,List communications referencing a VP of Engineering or VP of IT.
+21,Which emails indicate active interest in Android Enterprise?
+22,Which emails indicate active interest in Apigee API Management?
+23,Which emails indicate active interest in BeyondCorp Enterprise?
+24,Which emails indicate active interest in BigQuery?
+25,Which near‑closing communications also include an executive?
+26,Where are there custom‑term or discount requests with executive involvement?
+27,Which messages mention a quick demo and also reference executives?
+28,Which emails talk about a pilot or trial and include executives?
+29,Show communications that request BYOK/CMK details and cite an executive.
+30,Show messages referencing countersignature or DocuSign.
