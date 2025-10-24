@@ -56,6 +56,6 @@ def sync_gmail_data():
     
 
 if __name__ == "__main__":
-    #mock_gmail_data(1)
+    mock_gmail_data(2)
     sync_gmail_data();
 

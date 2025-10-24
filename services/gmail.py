@@ -5,6 +5,7 @@ import uuid
 from typing import Optional
 import imaplib
 import email
+import csv
 
 # https://mailtrap.io/blog/python-send-email-gmail/
 def send_message(msg):
@@ -36,8 +37,6 @@ def smtp_send_email(subject: str, body: str, message_id_prefix: str, reply_to: O
     
     if references:
         msg["References"] = references
-
-    print(msg["References"])
 
     msg.set_content(body)
 
@@ -78,7 +77,11 @@ def retrieve_email():
                 if thread == thread_id_prefix:
                     email_threads[thread_id_prefix] = email_threads[thread_id_prefix] + build_full_email_from_email_message(email_message)
 
-    print(email_threads)
+    # https://stackoverflow.com/questions/8685809/writing-a-dictionary-to-a-csv-file-with-one-line-for-every-key-value
+    with open('./corpus/thread_data.csv', 'w') as csv_file:  
+        writer = csv.writer(csv_file)
+        for key, value in email_threads.items():
+            writer.writerow([key, value])
         
     mail.close()
     mail.logout()
