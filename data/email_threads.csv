@@ -1,11 +1,11 @@
-doc_id,thread_id,message_index,subject,message
-THR0001-MSG1,1,1,Google Workspace (Enterprise Gmail) at Aperture Labs — Closed Won — update,"Hi there — thanks for the interest in Google Workspace (Enterprise Gmail). I support Aperture Labs.
+thread_id,doc_id,subject,message
+THR0001,THR0001-MSG1,Google Workspace (Enterprise Gmail) at Aperture Labs — Closed Won — update,"Hi there — thanks for the interest in Google Workspace (Enterprise Gmail). I support Aperture Labs.
 
 Happy to arrange a quick demo and share references.
 
 Best regards,
 Sales Development Representative"
-THR0001-MSG2,1,2,Google Workspace (Enterprise Gmail) at Aperture Labs — Closed Won — update,"Hi — thanks for reaching out about Google Workspace (Enterprise Gmail). We're at Aperture Labs.
+THR0001,THR0001-MSG2,Google Workspace (Enterprise Gmail) at Aperture Labs — Closed Won — update,"Hi — thanks for reaching out about Google Workspace (Enterprise Gmail). We're at Aperture Labs.
 
 We’d like to learn more about Google Workspace (Enterprise Gmail).
 
@@ -15,25 +15,25 @@ Our COO asked about rollout timing and change management.
 
 Best,
 Client Team"
-THR0001-MSG3,1,3,Google Workspace (Enterprise Gmail) at Aperture Labs — Closed Won — update,"Great to connect regarding Google Workspace (Enterprise Gmail) for Aperture Labs.
+THR0001,THR0001-MSG3,Google Workspace (Enterprise Gmail) at Aperture Labs — Closed Won — update,"Great to connect regarding Google Workspace (Enterprise Gmail) for Aperture Labs.
 
 Happy to include your COO on the next call if helpful.
 
 Thanks,
 Account Executive"
-THR0001-MSG4,1,4,Google Workspace (Enterprise Gmail) at Aperture Labs — Closed Won — update,"Hi — thanks for reaching out about Google Workspace (Enterprise Gmail). We're at Aperture Labs.
+THR0001,THR0001-MSG4,Google Workspace (Enterprise Gmail) at Aperture Labs — Closed Won — update,"Hi — thanks for reaching out about Google Workspace (Enterprise Gmail). We're at Aperture Labs.
 
 Our COO asked about rollout timing and change management.
 
 Best,
 Client Team"
-THR0002-MSG1,2,1,Re: Gemini for Workspace at Monarch Travel — Demo Scheduled,"Hi there — thanks for the interest in Gemini for Workspace. I support Monarch Travel.
+THR0002,THR0002-MSG1,Re: Gemini for Workspace at Monarch Travel — Demo Scheduled,"Hi there — thanks for the interest in Gemini for Workspace. I support Monarch Travel.
 
 Happy to arrange a quick demo and share references.
 
 Best regards,
 Sales Development Representative"
-THR0002-MSG2,2,2,Re: Gemini for Workspace at Monarch Travel — Demo Scheduled,"Hi — thanks for reaching out about Gemini for Workspace. We're at Monarch Travel.
+THR0002,THR0002-MSG2,Re: Gemini for Workspace at Monarch Travel — Demo Scheduled,"Hi — thanks for reaching out about Gemini for Workspace. We're at Monarch Travel.
 
 Our team is planning a pilot for Gemini for Workspace.
 
@@ -45,7 +45,7 @@ Our CFO would like to review the pricing structure this week.
 
 Best,
 Client Team"
-THR0002-MSG3,2,3,Re: Gemini for Workspace at Monarch Travel — Demo Scheduled,"Great to connect regarding Gemini for Workspace for Monarch Travel.
+THR0002,THR0002-MSG3,Re: Gemini for Workspace at Monarch Travel — Demo Scheduled,"Great to connect regarding Gemini for Workspace for Monarch Travel.
 
 Understood on the custom terms — I’ll coordinate with our legal and pricing teams.
 
@@ -53,19 +53,19 @@ Happy to include your CFO on the next call if helpful.
 
 Thanks,
 Account Executive"
-THR0002-MSG4,2,4,Re: Gemini for Workspace at Monarch Travel — Demo Scheduled,"Hi — thanks for reaching out about Gemini for Workspace. We're at Monarch Travel.
+THR0002,THR0002-MSG4,Re: Gemini for Workspace at Monarch Travel — Demo Scheduled,"Hi — thanks for reaching out about Gemini for Workspace. We're at Monarch Travel.
 
 Our CFO would like to review the pricing structure this week.
 
 Best,
 Client Team"
-THR0003-MSG1,3,1,Google Cloud Platform (GCP) at Stark Logistics — Demo Scheduled,"Hi there — thanks for the interest in Google Cloud Platform (GCP). I support Stark Logistics.
+THR0003,THR0003-MSG1,Google Cloud Platform (GCP) at Stark Logistics — Demo Scheduled,"Hi there — thanks for the interest in Google Cloud Platform (GCP). I support Stark Logistics.
 
 Happy to arrange a quick demo and share references.
 
 Best regards,
 Sales Development Representative"
-THR0003-MSG2,3,2,Google Cloud Platform (GCP) at Stark Logistics — Demo Scheduled,"Hi — thanks for reaching out about Google Cloud Platform (GCP). We're at Stark Logistics.
+THR0003,THR0003-MSG2,Google Cloud Platform (GCP) at Stark Logistics — Demo Scheduled,"Hi — thanks for reaching out about Google Cloud Platform (GCP). We're at Stark Logistics.
 
 We’d like to learn more about Google Cloud Platform (GCP).
 
@@ -75,7 +75,7 @@ We’ll need flexibility on pricing given our seat count and multi-geo setup.
 
 Best,
 Client Team"
-THR0003-MSG3,3,3,Google Cloud Platform (GCP) at Stark Logistics — Demo Scheduled,"Great to connect regarding Google Cloud Platform (GCP) for Stark Logistics.
+THR0003,THR0003-MSG3,Google Cloud Platform (GCP) at Stark Logistics — Demo Scheduled,"Great to connect regarding Google Cloud Platform (GCP) for Stark Logistics.
 
 I’ll check on BYOK and CMK details with our security team and get back to you.
 
@@ -83,37 +83,37 @@ Great — finance approval noted. I’ll line up the signature package.
 
 Thanks,
 Account Executive"
-THR0003-MSG4,3,4,Google Cloud Platform (GCP) at Stark Logistics — Demo Scheduled,"Hi — thanks for reaching out about Google Cloud Platform (GCP). We're at Stark Logistics.
+THR0003,THR0003-MSG4,Google Cloud Platform (GCP) at Stark Logistics — Demo Scheduled,"Hi — thanks for reaching out about Google Cloud Platform (GCP). We're at Stark Logistics.
 
 Procurement has approved the order form on our side.
 
 Best,
 Client Team"
-THR0004-MSG1,4,1,Re: Looker at PrimePath Consulting — Discovery,"Hi there — thanks for the interest in Looker. I support PrimePath Consulting.
+THR0004,THR0004-MSG1,Re: Looker at PrimePath Consulting — Discovery,"Hi there — thanks for the interest in Looker. I support PrimePath Consulting.
 
 Best regards,
 Sales Development Representative"
-THR0004-MSG2,4,2,Re: Looker at PrimePath Consulting — Discovery,"Hi — thanks for reaching out about Looker. We're at PrimePath Consulting.
+THR0004,THR0004-MSG2,Re: Looker at PrimePath Consulting — Discovery,"Hi — thanks for reaching out about Looker. We're at PrimePath Consulting.
 
 Best,
 Client Team"
-THR0004-MSG3,4,3,Re: Looker at PrimePath Consulting — Discovery,"Great to connect regarding Looker for PrimePath Consulting.
+THR0004,THR0004-MSG3,Re: Looker at PrimePath Consulting — Discovery,"Great to connect regarding Looker for PrimePath Consulting.
 
 Glad to hear legal is complete — I’ll send the final DocuSign today.
 
 Thanks,
 Account Executive"
-THR0004-MSG4,4,4,Re: Looker at PrimePath Consulting — Discovery,"Hi — thanks for reaching out about Looker. We're at PrimePath Consulting.
+THR0004,THR0004-MSG4,Re: Looker at PrimePath Consulting — Discovery,"Hi — thanks for reaching out about Looker. We're at PrimePath Consulting.
 
 We’ve locked final pricing and aim to wrap up this week.
 
 Best,
 Client Team"
-THR0005-MSG1,5,1,Apigee API Management at Northwind Traders — Qualified — update,"Hi there — thanks for the interest in Apigee API Management. I support Northwind Traders.
+THR0005,THR0005-MSG1,Apigee API Management at Northwind Traders — Qualified — update,"Hi there — thanks for the interest in Apigee API Management. I support Northwind Traders.
 
 Best regards,
 Sales Development Representative"
-THR0005-MSG2,5,2,Apigee API Management at Northwind Traders — Qualified — update,"Hi — thanks for reaching out about Apigee API Management. We're at Northwind Traders.
+THR0005,THR0005-MSG2,Apigee API Management at Northwind Traders — Qualified — update,"Hi — thanks for reaching out about Apigee API Management. We're at Northwind Traders.
 
 Can you support a non-standard discount tied to a three-year term?
 
@@ -121,7 +121,7 @@ Our CEO will join our next call to align on timeline.
 
 Best,
 Client Team"
-THR0005-MSG3,5,3,Apigee API Management at Northwind Traders — Qualified — update,"Great to connect regarding Apigee API Management for Northwind Traders.
+THR0005,THR0005-MSG3,Apigee API Management at Northwind Traders — Qualified — update,"Great to connect regarding Apigee API Management for Northwind Traders.
 
 We can explore an enterprise support SLA; I’ll confirm internally and revert.
 
@@ -131,7 +131,7 @@ Happy to include your CEO on the next call if helpful.
 
 Thanks,
 Account Executive"
-THR0005-MSG4,5,4,Apigee API Management at Northwind Traders — Qualified — update,"Hi — thanks for reaching out about Apigee API Management. We're at Northwind Traders.
+THR0005,THR0005-MSG4,Apigee API Management at Northwind Traders — Qualified — update,"Hi — thanks for reaching out about Apigee API Management. We're at Northwind Traders.
 
 We’ve locked final pricing and aim to wrap up this week.
 
@@ -139,11 +139,11 @@ Our CEO will join our next call to align on timeline.
 
 Best,
 Client Team"
-THR0006-MSG1,6,1,Vertex AI at Tyrell Biotech — Qualified — update,"Hi there — thanks for the interest in Vertex AI. I support Tyrell Biotech.
+THR0006,THR0006-MSG1,Vertex AI at Tyrell Biotech — Qualified — update,"Hi there — thanks for the interest in Vertex AI. I support Tyrell Biotech.
 
 Best regards,
 Sales Development Representative"
-THR0006-MSG2,6,2,Vertex AI at Tyrell Biotech — Qualified — update,"Hi — thanks for reaching out about Vertex AI. We're at Tyrell Biotech.
+THR0006,THR0006-MSG2,Vertex AI at Tyrell Biotech — Qualified — update,"Hi — thanks for reaching out about Vertex AI. We're at Tyrell Biotech.
 
 We have security questions about BYOK and customer-managed keys.
 
@@ -151,7 +151,7 @@ Our COO asked about rollout timing and change management.
 
 Best,
 Client Team"
-THR0006-MSG3,6,3,Vertex AI at Tyrell Biotech — Qualified — update,"Great to connect regarding Vertex AI for Tyrell Biotech.
+THR0006,THR0006-MSG3,Vertex AI at Tyrell Biotech — Qualified — update,"Great to connect regarding Vertex AI for Tyrell Biotech.
 
 Let me review discount options and follow up with what’s possible.
 
@@ -159,23 +159,23 @@ Happy to include your COO on the next call if helpful.
 
 Thanks,
 Account Executive"
-THR0006-MSG4,6,4,Vertex AI at Tyrell Biotech — Qualified — update,"Hi — thanks for reaching out about Vertex AI. We're at Tyrell Biotech.
+THR0006,THR0006-MSG4,Vertex AI at Tyrell Biotech — Qualified — update,"Hi — thanks for reaching out about Vertex AI. We're at Tyrell Biotech.
 
 Our COO asked about rollout timing and change management.
 
 Best,
 Client Team"
-THR0007-MSG1,7,1,Chronicle Security at Soylent Systems — Demo Scheduled — VP of IT included,"Hi there — thanks for the interest in Chronicle Security. I support Soylent Systems.
+THR0007,THR0007-MSG1,Chronicle Security at Soylent Systems — Demo Scheduled — VP of IT included,"Hi there — thanks for the interest in Chronicle Security. I support Soylent Systems.
 
 Best regards,
 Sales Development Representative"
-THR0007-MSG2,7,2,Chronicle Security at Soylent Systems — Demo Scheduled — VP of IT included,"Hi — thanks for reaching out about Chronicle Security. We're at Soylent Systems.
+THR0007,THR0007-MSG2,Chronicle Security at Soylent Systems — Demo Scheduled — VP of IT included,"Hi — thanks for reaching out about Chronicle Security. We're at Soylent Systems.
 
 Our VP of IT is looped to validate integration requirements.
 
 Best,
 Client Team"
-THR0007-MSG3,7,3,Chronicle Security at Soylent Systems — Demo Scheduled — VP of IT included,"Great to connect regarding Chronicle Security for Soylent Systems.
+THR0007,THR0007-MSG3,Chronicle Security at Soylent Systems — Demo Scheduled — VP of IT included,"Great to connect regarding Chronicle Security for Soylent Systems.
 
 Great — finance approval noted. I’ll line up the signature package.
 
@@ -183,7 +183,7 @@ Happy to include your VP of IT on the next call if helpful.
 
 Thanks,
 Account Executive"
-THR0007-MSG4,7,4,Chronicle Security at Soylent Systems — Demo Scheduled — VP of IT included,"Hi — thanks for reaching out about Chronicle Security. We're at Soylent Systems.
+THR0007,THR0007-MSG4,Chronicle Security at Soylent Systems — Demo Scheduled — VP of IT included,"Hi — thanks for reaching out about Chronicle Security. We're at Soylent Systems.
 
 We’ve locked final pricing and aim to wrap up this week.
 
@@ -191,33 +191,33 @@ Our VP of IT is looped to validate integration requirements.
 
 Best,
 Client Team"
-THR0008-MSG1,8,1,BeyondCorp Enterprise at Contoso Energy — Proposal,"Hi there — thanks for the interest in BeyondCorp Enterprise. I support Contoso Energy.
+THR0008,THR0008-MSG1,BeyondCorp Enterprise at Contoso Energy — Proposal,"Hi there — thanks for the interest in BeyondCorp Enterprise. I support Contoso Energy.
 
 Best regards,
 Sales Development Representative"
-THR0008-MSG2,8,2,BeyondCorp Enterprise at Contoso Energy — Proposal,"Hi — thanks for reaching out about BeyondCorp Enterprise. We're at Contoso Energy.
+THR0008,THR0008-MSG2,BeyondCorp Enterprise at Contoso Energy — Proposal,"Hi — thanks for reaching out about BeyondCorp Enterprise. We're at Contoso Energy.
 
 Best,
 Client Team"
-THR0008-MSG3,8,3,BeyondCorp Enterprise at Contoso Energy — Proposal,"Great to connect regarding BeyondCorp Enterprise for Contoso Energy.
+THR0008,THR0008-MSG3,BeyondCorp Enterprise at Contoso Energy — Proposal,"Great to connect regarding BeyondCorp Enterprise for Contoso Energy.
 
 Amazing — I'll prepare the final paperwork for signature.
 
 Thanks,
 Account Executive"
-THR0008-MSG4,8,4,BeyondCorp Enterprise at Contoso Energy — Proposal,"Hi — thanks for reaching out about BeyondCorp Enterprise. We're at Contoso Energy.
+THR0008,THR0008-MSG4,BeyondCorp Enterprise at Contoso Energy — Proposal,"Hi — thanks for reaching out about BeyondCorp Enterprise. We're at Contoso Energy.
 
 Legal finished the review; only countersignature remains.
 
 Best,
 Client Team"
-THR0009-MSG1,9,1,Google Maps Platform at Oscorp — Closed Lost — VP of IT included,"Hi there — thanks for the interest in Google Maps Platform. I support Oscorp.
+THR0009,THR0009-MSG1,Google Maps Platform at Oscorp — Closed Lost — VP of IT included,"Hi there — thanks for the interest in Google Maps Platform. I support Oscorp.
 
 Happy to arrange a quick demo and share references.
 
 Best regards,
 Sales Development Representative"
-THR0009-MSG2,9,2,Google Maps Platform at Oscorp — Closed Lost — VP of IT included,"Hi — thanks for reaching out about Google Maps Platform. We're at Oscorp.
+THR0009,THR0009-MSG2,Google Maps Platform at Oscorp — Closed Lost — VP of IT included,"Hi — thanks for reaching out about Google Maps Platform. We're at Oscorp.
 
 We’d like to learn more about Google Maps Platform.
 
@@ -229,7 +229,7 @@ Our VP of IT is looped to validate integration requirements.
 
 Best,
 Client Team"
-THR0009-MSG3,9,3,Google Maps Platform at Oscorp — Closed Lost — VP of IT included,"Great to connect regarding Google Maps Platform for Oscorp.
+THR0009,THR0009-MSG3,Google Maps Platform at Oscorp — Closed Lost — VP of IT included,"Great to connect regarding Google Maps Platform for Oscorp.
 
 We can explore an enterprise support SLA; I’ll confirm internally and revert.
 
@@ -237,23 +237,23 @@ Happy to include your VP of IT on the next call if helpful.
 
 Thanks,
 Account Executive"
-THR0009-MSG4,9,4,Google Maps Platform at Oscorp — Closed Lost — VP of IT included,"Hi — thanks for reaching out about Google Maps Platform. We're at Oscorp.
+THR0009,THR0009-MSG4,Google Maps Platform at Oscorp — Closed Lost — VP of IT included,"Hi — thanks for reaching out about Google Maps Platform. We're at Oscorp.
 
 Our VP of IT is looped to validate integration requirements.
 
 Best,
 Client Team"
-THR0010-MSG1,10,1,Re: Firebase at Hooli — Discovery,"Hi there — thanks for the interest in Firebase. I support Hooli.
+THR0010,THR0010-MSG1,Re: Firebase at Hooli — Discovery,"Hi there — thanks for the interest in Firebase. I support Hooli.
 
 Best regards,
 Sales Development Representative"
-THR0010-MSG2,10,2,Re: Firebase at Hooli — Discovery,"Hi — thanks for reaching out about Firebase. We're at Hooli.
+THR0010,THR0010-MSG2,Re: Firebase at Hooli — Discovery,"Hi — thanks for reaching out about Firebase. We're at Hooli.
 
 We have security questions about BYOK and customer-managed keys.
 
 Best,
 Client Team"
-THR0010-MSG3,10,3,Re: Firebase at Hooli — Discovery,"Great to connect regarding Firebase for Hooli.
+THR0010,THR0010-MSG3,Re: Firebase at Hooli — Discovery,"Great to connect regarding Firebase for Hooli.
 
 Let me review discount options and follow up with what’s possible.
 
@@ -261,19 +261,19 @@ Thanks for confirming procurement; I’ll share the countersignature steps.
 
 Thanks,
 Account Executive"
-THR0010-MSG4,10,4,Re: Firebase at Hooli — Discovery,"Hi — thanks for reaching out about Firebase. We're at Hooli.
+THR0010,THR0010-MSG4,Re: Firebase at Hooli — Discovery,"Hi — thanks for reaching out about Firebase. We're at Hooli.
 
 We’ve locked final pricing and aim to wrap up this week.
 
 Best,
 Client Team"
-THR0011-MSG1,11,1,ChromeOS Enterprise at Cyberdyne — Discovery,"Hi there — thanks for the interest in ChromeOS Enterprise. I support Cyberdyne.
+THR0011,THR0011-MSG1,ChromeOS Enterprise at Cyberdyne — Discovery,"Hi there — thanks for the interest in ChromeOS Enterprise. I support Cyberdyne.
 
 Happy to arrange a quick demo and share references.
 
 Best regards,
 Sales Development Representative"
-THR0011-MSG2,11,2,ChromeOS Enterprise at Cyberdyne — Discovery,"Hi — thanks for reaching out about ChromeOS Enterprise. We're at Cyberdyne.
+THR0011,THR0011-MSG2,ChromeOS Enterprise at Cyberdyne — Discovery,"Hi — thanks for reaching out about ChromeOS Enterprise. We're at Cyberdyne.
 
 Thanks for reaching out — we're evaluating ChromeOS Enterprise.
 
@@ -281,21 +281,21 @@ Could we set up a quick demo?
 
 Best,
 Client Team"
-THR0011-MSG3,11,3,ChromeOS Enterprise at Cyberdyne — Discovery,"Great to connect regarding ChromeOS Enterprise for Cyberdyne.
+THR0011,THR0011-MSG3,ChromeOS Enterprise at Cyberdyne — Discovery,"Great to connect regarding ChromeOS Enterprise for Cyberdyne.
 
 Thanks,
 Account Executive"
-THR0011-MSG4,11,4,ChromeOS Enterprise at Cyberdyne — Discovery,"Hi — thanks for reaching out about ChromeOS Enterprise. We're at Cyberdyne.
+THR0011,THR0011-MSG4,ChromeOS Enterprise at Cyberdyne — Discovery,"Hi — thanks for reaching out about ChromeOS Enterprise. We're at Cyberdyne.
 
 Best,
 Client Team"
-THR0012-MSG1,12,1,Android Enterprise at Acme Corp — Demo Scheduled | next steps,"Hi there — thanks for the interest in Android Enterprise. I support Acme Corp.
+THR0012,THR0012-MSG1,Android Enterprise at Acme Corp — Demo Scheduled | next steps,"Hi there — thanks for the interest in Android Enterprise. I support Acme Corp.
 
 Happy to arrange a quick demo and share references.
 
 Best regards,
 Sales Development Representative"
-THR0012-MSG2,12,2,Android Enterprise at Acme Corp — Demo Scheduled | next steps,"Hi — thanks for reaching out about Android Enterprise. We're at Acme Corp.
+THR0012,THR0012-MSG2,Android Enterprise at Acme Corp — Demo Scheduled | next steps,"Hi — thanks for reaching out about Android Enterprise. We're at Acme Corp.
 
 Thanks for reaching out — we're evaluating Android Enterprise.
 
@@ -305,7 +305,7 @@ Our VP of Engineering will join to review technical feasibility.
 
 Best,
 Client Team"
-THR0012-MSG3,12,3,Android Enterprise at Acme Corp — Demo Scheduled | next steps,"Great to connect regarding Android Enterprise for Acme Corp.
+THR0012,THR0012-MSG3,Android Enterprise at Acme Corp — Demo Scheduled | next steps,"Great to connect regarding Android Enterprise for Acme Corp.
 
 Great — finance approval noted. I’ll line up the signature package.
 
@@ -313,7 +313,7 @@ Happy to include your VP of Engineering on the next call if helpful.
 
 Thanks,
 Account Executive"
-THR0012-MSG4,12,4,Android Enterprise at Acme Corp — Demo Scheduled | next steps,"Hi — thanks for reaching out about Android Enterprise. We're at Acme Corp.
+THR0012,THR0012-MSG4,Android Enterprise at Acme Corp — Demo Scheduled | next steps,"Hi — thanks for reaching out about Android Enterprise. We're at Acme Corp.
 
 We’ve locked final pricing and aim to wrap up this week.
 
@@ -321,13 +321,13 @@ Our VP of Engineering will join to review technical feasibility.
 
 Best,
 Client Team"
-THR0013-MSG1,13,1,Google Cloud Contact Center AI at Massive Dynamic — Closed Lost — update,"Hi there — thanks for the interest in Google Cloud Contact Center AI. I support Massive Dynamic.
+THR0013,THR0013-MSG1,Google Cloud Contact Center AI at Massive Dynamic — Closed Lost — update,"Hi there — thanks for the interest in Google Cloud Contact Center AI. I support Massive Dynamic.
 
 Happy to arrange a quick demo and share references.
 
 Best regards,
 Sales Development Representative"
-THR0013-MSG2,13,2,Google Cloud Contact Center AI at Massive Dynamic — Closed Lost — update,"Hi — thanks for reaching out about Google Cloud Contact Center AI. We're at Massive Dynamic.
+THR0013,THR0013-MSG2,Google Cloud Contact Center AI at Massive Dynamic — Closed Lost — update,"Hi — thanks for reaching out about Google Cloud Contact Center AI. We're at Massive Dynamic.
 
 Thanks for reaching out — we're evaluating Google Cloud Contact Center AI.
 
@@ -335,19 +335,19 @@ Do you have customer references in our industry?
 
 Best,
 Client Team"
-THR0013-MSG3,13,3,Google Cloud Contact Center AI at Massive Dynamic — Closed Lost — update,"Great to connect regarding Google Cloud Contact Center AI for Massive Dynamic.
+THR0013,THR0013-MSG3,Google Cloud Contact Center AI at Massive Dynamic — Closed Lost — update,"Great to connect regarding Google Cloud Contact Center AI for Massive Dynamic.
 
 Thanks,
 Account Executive"
-THR0013-MSG4,13,4,Google Cloud Contact Center AI at Massive Dynamic — Closed Lost — update,"Hi — thanks for reaching out about Google Cloud Contact Center AI. We're at Massive Dynamic.
+THR0013,THR0013-MSG4,Google Cloud Contact Center AI at Massive Dynamic — Closed Lost — update,"Hi — thanks for reaching out about Google Cloud Contact Center AI. We're at Massive Dynamic.
 
 Best,
 Client Team"
-THR0014-MSG1,14,1,Duet AI for Developers (Gemini Code Assist) at Vandelay Industries — Qualified — update,"Hi there — thanks for the interest in Duet AI for Developers (Gemini Code Assist). I support Vandelay Industries.
+THR0014,THR0014-MSG1,Duet AI for Developers (Gemini Code Assist) at Vandelay Industries — Qualified — update,"Hi there — thanks for the interest in Duet AI for Developers (Gemini Code Assist). I support Vandelay Industries.
 
 Best regards,
 Sales Development Representative"
-THR0014-MSG2,14,2,Duet AI for Developers (Gemini Code Assist) at Vandelay Industries — Qualified — update,"Hi — thanks for reaching out about Duet AI for Developers (Gemini Code Assist). We're at Vandelay Industries.
+THR0014,THR0014-MSG2,Duet AI for Developers (Gemini Code Assist) at Vandelay Industries — Qualified — update,"Hi — thanks for reaching out about Duet AI for Developers (Gemini Code Assist). We're at Vandelay Industries.
 
 We have security questions about BYOK and customer-managed keys.
 
@@ -355,7 +355,7 @@ Our CTO is interested in SSO and security posture details.
 
 Best,
 Client Team"
-THR0014-MSG3,14,3,Duet AI for Developers (Gemini Code Assist) at Vandelay Industries — Qualified — update,"Great to connect regarding Duet AI for Developers (Gemini Code Assist) for Vandelay Industries.
+THR0014,THR0014-MSG3,Duet AI for Developers (Gemini Code Assist) at Vandelay Industries — Qualified — update,"Great to connect regarding Duet AI for Developers (Gemini Code Assist) for Vandelay Industries.
 
 Let me review discount options and follow up with what’s possible.
 
@@ -363,19 +363,19 @@ Happy to include your CTO on the next call if helpful.
 
 Thanks,
 Account Executive"
-THR0014-MSG4,14,4,Duet AI for Developers (Gemini Code Assist) at Vandelay Industries — Qualified — update,"Hi — thanks for reaching out about Duet AI for Developers (Gemini Code Assist). We're at Vandelay Industries.
+THR0014,THR0014-MSG4,Duet AI for Developers (Gemini Code Assist) at Vandelay Industries — Qualified — update,"Hi — thanks for reaching out about Duet AI for Developers (Gemini Code Assist). We're at Vandelay Industries.
 
 Our CTO is interested in SSO and security posture details.
 
 Best,
 Client Team"
-THR0015-MSG1,15,1,BigQuery at Gringotts Bank — Qualified | next steps,"Hi there — thanks for the interest in BigQuery. I support Gringotts Bank.
+THR0015,THR0015-MSG1,BigQuery at Gringotts Bank — Qualified | next steps,"Hi there — thanks for the interest in BigQuery. I support Gringotts Bank.
 
 Happy to arrange a quick demo and share references.
 
 Best regards,
 Sales Development Representative"
-THR0015-MSG2,15,2,BigQuery at Gringotts Bank — Qualified | next steps,"Hi — thanks for reaching out about BigQuery. We're at Gringotts Bank.
+THR0015,THR0015-MSG2,BigQuery at Gringotts Bank — Qualified | next steps,"Hi — thanks for reaching out about BigQuery. We're at Gringotts Bank.
 
 Our team is planning a pilot for BigQuery.
 
@@ -387,7 +387,7 @@ Our CIO wants to discuss data residency and compliance.
 
 Best,
 Client Team"
-THR0015-MSG3,15,3,BigQuery at Gringotts Bank — Qualified | next steps,"Great to connect regarding BigQuery for Gringotts Bank.
+THR0015,THR0015-MSG3,BigQuery at Gringotts Bank — Qualified | next steps,"Great to connect regarding BigQuery for Gringotts Bank.
 
 We can explore an enterprise support SLA; I’ll confirm internally and revert.
 
@@ -395,7 +395,7 @@ Happy to include your CIO on the next call if helpful.
 
 Thanks,
 Account Executive"
-THR0015-MSG4,15,4,BigQuery at Gringotts Bank — Qualified | next steps,"Hi — thanks for reaching out about BigQuery. We're at Gringotts Bank.
+THR0015,THR0015-MSG4,BigQuery at Gringotts Bank — Qualified | next steps,"Hi — thanks for reaching out about BigQuery. We're at Gringotts Bank.
 
 Our CIO wants to discuss data residency and compliance.
 
