@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 from services.gmail import smtp_send_email
 from services.gmail import retrieve_email
-from ir.faiss import init
+from ir.faiss import query as faiss_query
 
 load_dotenv()
 
@@ -57,7 +57,8 @@ def sync_gmail_data():
     
 
 if __name__ == "__main__":
-    #init()
-    mock_gmail_data(15)
-    sync_gmail_data();
+    result = faiss_query("Give me information related to banking", 2)
+    print(result)
+    #mock_gmail_data(15)
+    #sync_gmail_data();
 
