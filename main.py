@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 from services.gmail import smtp_send_email
 from services.gmail import retrieve_email
+from ir.faiss import init
 
 load_dotenv()
 
@@ -56,6 +57,7 @@ def sync_gmail_data():
     
 
 if __name__ == "__main__":
-    mock_gmail_data(2)
+    #init()
+    mock_gmail_data(15)
     sync_gmail_data();
 
