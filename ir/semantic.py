@@ -10,21 +10,24 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 df['embedding'] = df['chunk'].apply(model.encode)
 vector = model.encode(df['chunk'])
 dim = vector.shape[1]
-index = faiss.IndexFlatL2(dim)
+index = faiss.IndexFlatIP(dim)
+faiss.normalize_L2(vector)
 index.add(vector)   
 
-def query(search_query, results):
+def query(search_query, results, threshold=.3):
     encoded = model.encode(search_query)
     vec = np.array(encoded).reshape(1, -1)
-    distance, pos = index.search(vec, results)
+    faiss.normalize_L2(vec)
+    similarity, pos = index.search(vec, results)
     chunks = df["chunk"].iloc[pos[0]]    
 
     docs = []
     for i, chunk in enumerate(chunks):
-        doc = {
-            "doc_id" : df.iloc[pos[0][i]].thread_id, 
-            "score" : distance[0][i],
-            "page_content" : chunk
-        }
-        docs.append(doc)
+        if similarity[0][i] > threshold:
+            doc = {
+                "doc_id" : df.iloc[pos[0][i]].thread_id, 
+                "score" : similarity[0][i],
+                "page_content" : chunk
+            }
+            docs.append(doc)
     return docs
