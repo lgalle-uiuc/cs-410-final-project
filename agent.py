@@ -4,12 +4,11 @@ import os
 from langgraph.prebuilt import create_react_agent
 from langchain_core.tools import tool
 from langchain.chat_models import init_chat_model
-from ir.faiss import query as faiss_query
+from ir.semantic import query as semantic_query
 from ir.keyword import query as keyword_query
 
 
 api_key = os.getenv("API_KEY")
-print(api_key)
 os.environ["OPENAI_API_KEY"] = api_key
 
 model = init_chat_model("gpt-4.1")
@@ -17,7 +16,7 @@ model = init_chat_model("gpt-4.1")
 @tool
 def retrieve_semantic(query: str):
     """Retrieves gmail information using the semantic information retrieval method"""
-    return faiss_query(query, 2)
+    return semantic_query(query, 2)
 
 @tool
 def retrieve_keyword(query: str, algorithm:str):
