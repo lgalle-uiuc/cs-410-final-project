@@ -1,6 +1,7 @@
 import csv
 import time
 from dotenv import load_dotenv
+import logging
 
 load_dotenv()
 
@@ -9,6 +10,8 @@ from services.gmail import retrieve_email
 from ir.faiss import query as faiss_query
 from ir.keyword import query as keyword_query
 from agent import get_agent
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def mock_thread(product, messages, thread_id):
 
@@ -56,26 +59,35 @@ def mock_gmail_data(number_to_mock):
 
 def sync_gmail_data():
     retrieve_email()
+
+def main():
+    try:
+        #result = faiss_query("Give me information related to banking", 2)
+        #result_two = keyword_query(query='google gemini', algorithm='bm25')
+
+        agent = get_agent()
+
+        while True:
+            # Prompt user for question
+            question = input("Please enter your question (or type 'exit' to quit): ")
+
+            if question.lower() == 'exit':
+                print("Exiting the program. Goodbye!")
+                break
+
+            for step in agent.stream(
+                {"messages": [{"role": "user", "content": question}]},
+                stream_mode="values",
+            ):
+                step["messages"][-1].pretty_print()
+
+    except Exception as e:
+        logger.error(f"An error occurred: {str(e)}")
     
 
 if __name__ == "__main__":
 
-    result = faiss_query("Give me information related to banking", 2)
-    result_two = keyword_query(query='google gemini', algorithm='bm25')
-
-    print(result)
-    print(result_two)
-
-    agent = get_agent()
-
-    query = "What information is there on sales related to gemini? Use faiss to retrieve this information"
-    for step in agent.stream(
-        {"messages": [{"role": "user", "content": query}]},
-        stream_mode="values",
-    ):
-        step["messages"][-1].pretty_print()
-
-    
+    main()
 
     #print(result_two)
 
