@@ -59,5 +59,9 @@ def query(query, algorithm, bm25_k1=3.15, bm25_b=1, top_k=3):
         searcher.set_rm3(20, 10, 0.5)
 
     hits = searcher.search(query, k=top_k)
-    print(hits[0].lucene_document)
-    return [{"doc_id" : hit.docid, "score" : hit.score, "page_content" : hit.lucene_document.get('raw')} for hit in hits]
+    result = [{"doc_id" : hit.docid, "score" : hit.score, "page_content" : hit.lucene_document.get('raw')} for hit in hits]
+
+    print("\nKeyword Search Result\n")
+    print(result)
+
+    return result

@@ -14,7 +14,7 @@ index = faiss.IndexFlatIP(dim)
 faiss.normalize_L2(vector)
 index.add(vector)   
 
-def query(search_query, results, threshold=.3):
+def query(search_query, results, threshold=.2):
     encoded = model.encode(search_query)
     vec = np.array(encoded).reshape(1, -1)
     faiss.normalize_L2(vec)
@@ -30,4 +30,9 @@ def query(search_query, results, threshold=.3):
                 "page_content" : chunk
             }
             docs.append(doc)
+
+
+    print("Semantic Search Result\n")
+    print(docs)
+
     return docs
