@@ -39,21 +39,14 @@ def build_index(input_dir, index_dir):
 
 directory = 'corpus/keyword'
 
-
-# Preprocess corpus
 if not os.path.exists(directory) or not os.listdir(directory):
     preprocess_corpus('./corpus/thread_data.csv', directory)
-#else:
-#    print(f"Preprocessed corpus already exists at {processed_corpus_dir}. Skipping preprocessing.")
 
 build_index(directory, 'corpus/keyword/index')
 
-# Search
 searcher = LuceneSearcher(os.path.join(directory, 'index'))
 
 def query(query, algorithm, bm25_k1=3.15, bm25_b=1, top_k=3):
-    print('hi')
-
     if 'bm25' == algorithm:
         print(f"\nRunning bm25 with k1:{bm25_k1} and b:{bm25_b}")
         searcher.set_bm25(k1=bm25_k1, b=bm25_b)
