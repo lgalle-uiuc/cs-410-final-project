@@ -6,6 +6,7 @@ from services.gmail import smtp_send_email
 from services.gmail import retrieve_email
 from ir.faiss import query as faiss_query
 from ir.keyword import query as keyword_query
+from agent import get_agent
 
 load_dotenv()
 
@@ -58,10 +59,25 @@ def sync_gmail_data():
     
 
 if __name__ == "__main__":
-    #result = faiss_query("Give me information related to banking", 2)
+
+    result = faiss_query("Give me information related to banking", 2)
     result_two = keyword_query(query='google gemini', algorithm='bm25')
 
+    print(result)
     print(result_two)
+
+    agent = get_agent()
+
+    query = "What information is there on sales related to gemini? Use faiss to retrieve this information"
+    for step in agent.stream(
+        {"messages": [{"role": "user", "content": query}]},
+        stream_mode="values",
+    ):
+        step["messages"][-1].pretty_print()
+
+    
+
+    #print(result_two)
 
 
     #mock_gmail_data(15)
