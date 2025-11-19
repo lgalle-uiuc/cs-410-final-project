@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from services.gmail import smtp_send_email
 from services.gmail import retrieve_email
 from ir.faiss import query as faiss_query
+from ir.keyword import query as keyword_query
 
 load_dotenv()
 
@@ -57,8 +58,15 @@ def sync_gmail_data():
     
 
 if __name__ == "__main__":
-    result = faiss_query("Give me information related to banking", 2)
-    print(result)
+    #result = faiss_query("Give me information related to banking", 2)
+    result_two = keyword_query(query='google gemini', algorithm='bm25')
+
+    print(result_two)
+
+
     #mock_gmail_data(15)
     #sync_gmail_data();
 
+def search(algorithm, results):
+    ## borrowed code from mp1
+    print('hi')
