@@ -2,13 +2,13 @@ import csv
 import time
 from dotenv import load_dotenv
 
+load_dotenv()
+
 from services.gmail import smtp_send_email
 from services.gmail import retrieve_email
 from ir.faiss import query as faiss_query
 from ir.keyword import query as keyword_query
 from agent import get_agent
-
-load_dotenv()
 
 def mock_thread(product, messages, thread_id):
 
