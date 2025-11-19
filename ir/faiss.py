@@ -17,16 +17,14 @@ def query(search_query, results):
     encoded = model.encode(search_query)
     vec = np.array(encoded).reshape(1, -1)
     distance, pos = index.search(vec, results)
-    chunks = df["chunk"].iloc[pos[0]]
+    chunks = df["chunk"].iloc[pos[0]]    
 
     docs = []
     for i, chunk in enumerate(chunks):
         doc = {
-            "page_content" : chunk,
-            "metadata" : {
-                'index': pos[0][i], 
-                'distance': distance[0][i]
-            }
+            "doc_id" : df.iloc[pos[0][i]].thread_id, 
+            "score" : distance[0][i],
+            "page_content" : chunk
         }
         docs.append(doc)
     return docs

@@ -60,4 +60,4 @@ def query(query, algorithm, bm25_k1=3.15, bm25_b=1, top_k=3):
 
     hits = searcher.search(query, k=top_k)
     print(hits[0].lucene_document)
-    return [(hit.docid, hit.score, hit.lucene_document.get('raw')) for hit in hits]
+    return [{"doc_id" : hit.docid, "score" : hit.score, "page_content" : hit.lucene_document.get('raw')} for hit in hits]
