@@ -79,14 +79,12 @@ def retrieve_email():
 
     # https://stackoverflow.com/questions/8685809/writing-a-dictionary-to-a-csv-file-with-one-line-for-every-key-value
 
-    os.remove('./corpus/thread_data.csv')
-
     thread_data_file = './corpus/thread_data.csv'
     try:
         os.remove(thread_data_file)
         print(f"File '{thread_data_file}' deleted successfully.")
-    except Exception as e:
-        print(f"File was not removed with error: {e}")
+    except FileNotFoundError as e:
+        print(f"File {thread_data_file} was not found to delete, continuing to creation")
 
     with open('./corpus/thread_data.csv', 'w') as csv_file:  
         writer = csv.writer(csv_file)
