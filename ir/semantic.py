@@ -14,17 +14,18 @@ index = faiss.IndexFlatIP(dim)
 faiss.normalize_L2(vector)
 index.add(vector)   
 
-def query_with_stats(query_list, results, threshold=.2):
+def query_with_stats(query_list, k, threshold=.2):
+    results = {}
     for i, q in enumerate(query_list):
-        hits = query(q, results, threshold)
-        results[str(i)] = [(hit.doc_id, hit.score) for hit in hits]
+        hits = query(q, k, threshold)
+        results[str(i)] = [(hit['doc_id'], hit['score']) for hit in hits]
     return results
 
-def query(search_query, results, threshold=.2):
+def query(search_query, k, threshold=.2):
     encoded = model.encode(search_query)
     vec = np.array(encoded).reshape(1, -1)
     faiss.normalize_L2(vec)
-    similarity, pos = index.search(vec, results)
+    similarity, pos = index.search(vec, k)
     chunks = df["chunk"].iloc[pos[0]]    
 
     docs = []

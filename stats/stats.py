@@ -8,11 +8,8 @@ qrels_file = './data/qrels.txt'
 def get_queries():
     return load_queries(query_file);
 
-def get_ndcg():
-
-    
-
-    qrels = load_qrels(qrels_file)
+def get_ndcg(results):
+    return compute_ndcg(results, load_qrels(qrels_file))
 
 def compute_ndcg(results, qrels, k=10):
     def dcg(relevances):
