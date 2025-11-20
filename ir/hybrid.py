@@ -1,13 +1,14 @@
 from ir.semantic import query as semantic_query
 from ir.keyword import query as keyword_query
 
-def query_bulk(query_list, keyword_algorithm:str, results=3):
-    res = []
-    for q in query_list:
-        res.append(query(q, keyword_algorithm, results))
-    return res
+def query_with_stats(query_list, keyword_algorithm:str, k=3):
+    results = {}
+    for i, q in enumerate(query_list):
+        hits = query(q, keyword_algorithm, k)
+        results[str(i)] = [(hit['doc_id'], hit['score']) for hit in hits]
+    return results
 
-def query(query: str, keyword_algorithm:str, results=3):
+def query(query: str, keyword_algorithm:str, k=3):
     semantic_results = semantic_query(query, 5)
     keyword_results = keyword_query(query, keyword_algorithm)
 
@@ -45,7 +46,7 @@ def query(query: str, keyword_algorithm:str, results=3):
     print("\nHybrid Search Result\n")
     print(ranked_results)
     
-    return ranked_results[:results]
+    return ranked_results[:k]
 
     
 

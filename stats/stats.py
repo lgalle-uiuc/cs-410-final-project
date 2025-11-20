@@ -11,6 +11,9 @@ def get_queries():
 def get_ndcg(results):
     return compute_ndcg(results, load_qrels(qrels_file))
 
+def get_precision(results):
+    return compute_precision(results, load_qrels(qrels_file))
+
 def compute_ndcg(results, qrels, k=10):
     def dcg(relevances):
         # return sum((2 ** rel - 1) / np.log2(i + 2) for i, rel in enumerate(relevances[:k]))

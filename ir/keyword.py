@@ -52,6 +52,13 @@ def query_bulk(query_list, algorithm, bm25_k1=3.15, bm25_b=1, top_k=3):
         res.append(query(q, algorithm, bm25_k1, bm25_k1, top_k))
     return res
 
+def query_with_stats(query_list, algorithm, bm25_k1=3.15, bm25_b=1, top_k=3):
+    results = {}
+    for i, q in enumerate(query_list):
+        hits = query(q, algorithm, bm25_k1, bm25_b, top_k)
+        results[str(i)] = [(hit['doc_id'], hit['score']) for hit in hits]
+    return results
+
 def query(query, algorithm, bm25_k1=3.15, bm25_b=1, top_k=3):
     if 'bm25' == algorithm:
         print(f"\nRunning bm25 with k1:{bm25_k1} and b:{bm25_b}")
