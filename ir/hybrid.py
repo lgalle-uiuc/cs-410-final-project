@@ -1,6 +1,12 @@
 from ir.semantic import query as semantic_query
 from ir.keyword import query as keyword_query
 
+def query_bulk(query_list, keyword_algorithm:str, results=3):
+    res = []
+    for q in query_list:
+        res.append(query(q, keyword_algorithm, results))
+    return res
+
 def query(query: str, keyword_algorithm:str, results=3):
     semantic_results = semantic_query(query, 5)
     keyword_results = keyword_query(query, keyword_algorithm)
@@ -27,6 +33,7 @@ def query(query: str, keyword_algorithm:str, results=3):
         if res['doc_id'] in combined_list: 
             combined_list[res['doc_id']]['normalized_score'] += res['score'] / max_kw
         else:
+            res['normalized_score'] = res['score'] / max_kw
             combined_list[res['doc_id']] = res
 
     ranked_results = sorted(

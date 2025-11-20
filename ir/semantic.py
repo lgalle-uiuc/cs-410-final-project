@@ -14,6 +14,12 @@ index = faiss.IndexFlatIP(dim)
 faiss.normalize_L2(vector)
 index.add(vector)   
 
+def query_with_stats(query_list, results, threshold=.2):
+    for i, q in enumerate(query_list):
+        hits = query(q, results, threshold)
+        results[str(i)] = [(hit.doc_id, hit.score) for hit in hits]
+    return results
+
 def query(search_query, results, threshold=.2):
     encoded = model.encode(search_query)
     vec = np.array(encoded).reshape(1, -1)

@@ -46,6 +46,12 @@ build_index(directory, 'corpus/keyword/index')
 
 searcher = LuceneSearcher(os.path.join(directory, 'index'))
 
+def query_bulk(query_list, algorithm, bm25_k1=3.15, bm25_b=1, top_k=3):
+    res = []
+    for q in query_list:
+        res.append(query(q, algorithm, bm25_k1, bm25_k1, top_k))
+    return res
+
 def query(query, algorithm, bm25_k1=3.15, bm25_b=1, top_k=3):
     if 'bm25' == algorithm:
         print(f"\nRunning bm25 with k1:{bm25_k1} and b:{bm25_b}")
