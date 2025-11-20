@@ -78,11 +78,23 @@ def retrieve_email():
                     email_threads[thread_id_prefix] = email_threads[thread_id_prefix] + build_full_email_from_email_message(email_message)
 
     # https://stackoverflow.com/questions/8685809/writing-a-dictionary-to-a-csv-file-with-one-line-for-every-key-value
+
+    os.remove('./corpus/thread_data.csv')
+
+    thread_data_file = './corpus/thread_data.csv'
+    try:
+        os.remove(thread_data_file)
+        print(f"File '{thread_data_file}' deleted successfully.")
+    except Exception as e:
+        print(f"File was not removed with error: {e}")
+
     with open('./corpus/thread_data.csv', 'w') as csv_file:  
         writer = csv.writer(csv_file)
         writer.writerow(["thread_id", "chunk"])
         for key, value in email_threads.items():
             writer.writerow([key, value])
+
+    print(f"File '{thread_data_file}' written successfully.")
         
     mail.close()
     mail.logout()
