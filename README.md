@@ -81,4 +81,35 @@ Some examples:
  - Compute precision for the sample queries using hybrid search with bm25
  - Compute precision for the sample queries using keyword search with qld
 
- Sample data exists in the data/qrels.txt and data/queries.txt file for computing these metrics. You are free to add your own examples as well. 
+Sample data exists in the data/qrels.txt and data/queries.txt file for computing these metrics. You are free to add your own examples as well. 
+
+## Code Explanation
+
+### Mocking and Retrieving Data from the gmail account
+
+#### Mocking
+
+The mocking of email data is done over the Gmail SMTP server via SSL. It uses the google app username and password to make a connection to the server to perform requests. To generate email threads, we are grabbing the email thread id from the email_threads.csv data, and stamping that into the message id in google to be able to reference the thread ids when we pull it back down into our local. We also use these same thread ids in the message id to be able to thread messages together in the references/reply-to headers
+
+#### Syncing
+
+We retrieve the email messages over IMAP and using the google app creds as in mocking. We pull all messages from the gmail server and reconstruct each of the threads from the message id headers, reference headers, and reply to headers that we referenced before. Once the threads are rebuilt, we save them into our corpus folder with the corresponding thread ids and content, all merged into a single row. 
+
+### Semantic Search
+
+Semantic seach is done using faiss. We read the thread_data.csv we save to the corpus file, create a pandas dataframe, encode it using our sentence transformers, and then store it into the faiss vector database with capabilities for cosine distance search. When searching, we first encode the query, find the nearest cosine distance neighbors, ensure it is over the threshold provided by the caller, and then return a dictionary with the results. 
+
+### Keyword Search
+
+Keyword search uses the same mechanisms used in assigment 1, with options of bm25, rm3, and qld. We've prepopulated the .jsonl document in the corpus folder, and then through the initial load we process these files and have lucene generate the documents into our index. We then run keyword search based off of the algorithm provided by the caller. 
+
+### Hybrid Search
+
+This calls both the semantic search and keyword search and combines them into a single result. We do this by normalizing each of the results from the semantic and the keyword search by dividing each of the scores by the max score of the group, adding the normalized scores from semantic and keyword seach together, and then returning the top k results for simplicity.
+
+### Self Analysis
+
+We have populated qrels and queries into the data folder with a collection of example queries and results for testing. Precision and ndcg are assuming that these queries have already been done against one of the IR mechanisms above, and the results are fed into these methods, and matched against the qrels. The result is populated and returned to the user. 
+
+ ### The Agent
+The agent is built using langchain. We have an agent file, which wraps all of the relevant functions needed to fulfill the goals of this project. Calls to our OpenAI model are then brokered by langchain, and the result of tools calls can be chained together by the agent to provide the desired result for the user. 
