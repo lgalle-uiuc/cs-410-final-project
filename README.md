@@ -17,7 +17,9 @@ https://github.com/castorini/pyserini/blob/master/docs/installation.md#pypi-inst
 Run the following commands:
 
 ```pip install -r requirements.txt```
+
 ```conda install -c conda-forge langgraph```
+
 ```pip install langchain langchain-text-splitters langchain-community bs4```
 
 Create a .env file in the root of the project. It will be populated with data at a later point. 
@@ -35,6 +37,7 @@ https://support.google.com/mail/answer/185833?hl=en
 In your .env file, set the following properties:
 
 GMAIL_EMAIL=your-email
+
 GMAIL_APP_PASSWORD=your-password
 
 Then, run 
