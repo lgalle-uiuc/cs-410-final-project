@@ -10,6 +10,7 @@ logger = logging.getLogger(__name__)
 
 def main():
     try:
+        # https://docs.langchain.com/oss/python/langchain/rag
         agent = get_agent()
 
         while True:
